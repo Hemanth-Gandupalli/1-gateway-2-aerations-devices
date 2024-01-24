@@ -43,7 +43,7 @@ if __name__ == "__main__":
                     print("-------------Gateway shifts to reciving mode---------------")
                     LoRa.setRxGain(LoRa.RX_GAIN_POWER_SAVING, LoRa.RX_GAIN_AUTO)
                     LoRa.request()
-                    LoRa.wait(4)
+                    LoRa.wait(1)
                     try:
                         rcv_data=[]
                         while LoRa.available():
